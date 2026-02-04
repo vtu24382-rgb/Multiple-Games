@@ -1,0 +1,458 @@
+/* Base Game Styles */
+.game {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.game h2 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+/* Reset Button Styles (Shared) */
+.reset-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 8px 16px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reset-btn:hover {
+  background-color: #c0392b;
+}
+
+/* XO Game Styles */
+.xo-game .status {
+  margin: 10px 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.xo-game .board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  margin: 20px auto;
+  max-width: 300px;
+}
+
+.xo-game .square {
+  background: #fff;
+  border: 1px solid #999;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 100px;
+  padding: 0;
+  text-align: center;
+  width: 100px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.xo-game .square:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.02);
+}
+
+/* Snake Game Styles */
+.snake-game {
+  background: #333;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.snake-game canvas {
+  display: block;
+  margin: 20px auto;
+  border: 2px solid #444;
+  background: #222;
+}
+
+.snake-game .game-info {
+  display: flex;
+  justify-content: space-between;
+  background: #444;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.snake-game .controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.snake-game button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.snake-game button:hover {
+  transform: translateY(-2px);
+}
+
+.snake-game .start-btn, 
+.snake-game .restart-btn {
+  background: #4CAF50;
+  color: white;
+}
+
+.snake-game .start-btn:hover, 
+.snake-game .restart-btn:hover {
+  background: #3e8e41;
+}
+
+.snake-game .controls button {
+  background: #2196F3;
+  color: white;
+}
+
+.snake-game .controls button:hover {
+  background: #0b7dda;
+}
+
+.snake-game .start-screen, 
+.snake-game .game-over {
+  text-align: center;
+  padding: 20px;
+}
+
+.snake-game .start-screen p, 
+.snake-game .game-over p {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+/* Rock Paper Scissors Styles */
+.rps-game .scoreboard {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  font-size: 18px;
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.rps-game .choices {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.rps-game .choice-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: capitalize;
+  transition: all 0.2s;
+  font-weight: bold;
+}
+
+.rps-game .choice-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.rps-game .choice-btn.rock {
+  background-color: #f39c12;
+  color: white;
+}
+
+.rps-game .choice-btn.rock:hover {
+  background-color: #e67e22;
+}
+
+.rps-game .choice-btn.paper {
+  background-color: #3498db;
+  color: white;
+}
+
+.rps-game .choice-btn.paper:hover {
+  background-color: #2980b9;
+}
+
+.rps-game .choice-btn.scissors {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.rps-game .choice-btn.scissors:hover {
+  background-color: #c0392b;
+}
+
+.rps-game .results {
+  margin: 20px 0;
+  text-align: center;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 4px;
+}
+
+.rps-game .choice {
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.rps-game .result {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 8px 0;
+}
+
+.rps-game .result.win {
+  color: #2ecc71;
+}
+
+.rps-game .result.lose {
+  color: #e74c3c;
+}
+
+.rps-game .result.draw {
+  color: #3498db;
+}
+
+.snake-game {
+  background: #333;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.snake-game canvas {
+  display: block;
+  margin: 20px auto;
+  border: 2px solid #444;
+  background: #222;
+}
+
+.snake-game .game-info {
+  display: flex;
+  justify-content: space-between;
+  background: #444;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.snake-game .controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.snake-game button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.snake-game button:hover {
+  transform: translateY(-2px);
+}
+
+.snake-game .start-btn, 
+.snake-game .restart-btn {
+  background: #4CAF50;
+  color: white;
+}
+
+.snake-game .start-btn:hover, 
+.snake-game .restart-btn:hover {
+  background: #3e8e41;
+}
+
+.snake-game .controls button {
+  background: #2196F3;
+  color: white;
+}
+
+.snake-game .controls button:hover {
+  background: #0b7dda;
+}
+
+.snake-game .start-screen, 
+.snake-game .game-over {
+  text-align: center;
+  padding: 20px;
+}
+
+.snake-game .start-screen p, 
+.snake-game .game-over p {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+/* Rock Paper Scissors Styles */
+.rps-game {
+  text-align: center;
+}
+
+.rps-game .scoreboard {
+  margin-bottom: 20px;
+}
+
+.rps-game .score {
+  display: flex;
+  justify-content: space-around;
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.rps-game .choices {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.rps-game .choice-btn {
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.rps-game .choice-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.rps-game .hand-image {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 8px;
+}
+
+.rps-game .rock {
+  border: 3px solid #f39c12;
+}
+
+.rps-game .paper {
+  border: 3px solid #3498db;
+}
+
+.rps-game .scissors {
+  border: 3px solid #e74c3c;
+}
+
+.rps-game .results-container {
+  margin: 25px 0;
+}
+
+.rps-game .hands-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.rps-game .hand {
+  flex: 1;
+  text-align: center;
+}
+
+.rps-game .hand h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.rps-game .hand-result-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.rps-game .vs-circle {
+  width: 80px;
+  height: 80px;
+  background: #f8f9fa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.rps-game .result {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.rps-game .result.win {
+  color: #2ecc71;
+  background: rgba(46, 204, 113, 0.1);
+}
+
+.rps-game .result.lose {
+  color: #e74c3c;
+  background: rgba(231, 76, 60, 0.1);
+}
+
+.rps-game .result.draw {
+  color: #3498db;
+  background: rgba(52, 152, 219, 0.1);
+}
+
+.rps-game .reset-btn {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  background-color: #7f8c8d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.rps-game .reset-btn:hover {
+  background-color: #6c7a7d;
+}
